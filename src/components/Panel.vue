@@ -11,6 +11,12 @@
 
 <script>
 export default {
+  data() {
+    return {
+      name: 'Watcharaphat',
+      lastName: 'Manosatiankul',
+    };
+  },
 };
 </script>
 

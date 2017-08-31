@@ -13,7 +13,6 @@
 import Panel from './Panel';
 
 export default {
-  name: 'hello',
   components: {
     Panel,
   },
