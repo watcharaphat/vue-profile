@@ -1,5 +1,5 @@
 <template>
-  <div class="panel box">
+  <div class="panel">
       <div class="columns profile-header">
         <div class="column">
           <img :src="image" alt="profile_img" />
@@ -47,6 +47,7 @@ export default {
   min-height: 100vh;
   background-color: #00D1B2;
   color: #FFFFFF;
+  padding: 1.25rem;
 }
 
 .profile-header {
