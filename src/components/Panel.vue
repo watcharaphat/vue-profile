@@ -1,9 +1,9 @@
 <template>
-  <div class="panel box hero is-fullheight is-info">
+  <div class="panel box hero is-fullheight is-primary">
     <div class="profile-avatar has-text-centered">
-      <img src="../../static/img/coffee_circle.png">
+      <img :src="image">
       <div class="profile-name">
-        <h1>Watcharaphat Manosatiankul</h1>
+        <span>{{ name }} {{ lastName }}</span>
       </div>
     </div>
   </div>
@@ -15,6 +15,7 @@ export default {
     return {
       name: 'Watcharaphat',
       lastName: 'Manosatiankul',
+      image: '../../static/img/coffee_circle.png',
     };
   },
 };
@@ -29,6 +30,8 @@ export default {
 
 .profile-name {
   padding-top: 5vh;
+  font-size: 1.7em;
+  font-weight: 700;
 }
 
 </style>
