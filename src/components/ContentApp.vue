@@ -1,16 +1,26 @@
 <template>
   <div class="columns is-multiline content-app">
-    <div class="column is-6">
-      <div class="box">half-box</div>
-    </div>
-    <div class="column is-6">
-      <div class="box">half-box</div>
-    </div>
+    <small-box></small-box>
+    <large-box></large-box>
+    <medium-box></medium-box>
+    <medium-box></medium-box>
+    <full-box></full-box>
   </div>
 </template>
 
 <script>
+import SmallBox from './box/SmallBox';
+import MediumBox from './box/MediumBox';
+import LargeBox from './box/LargeBox';
+import FullBox from './box/FullBox';
+
 export default {
+  components: {
+    SmallBox,
+    MediumBox,
+    LargeBox,
+    FullBox,
+  },
 };
 </script>
 

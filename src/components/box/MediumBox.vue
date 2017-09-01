@@ -1,7 +1,7 @@
 <template>
-  <div class="column is-4">
+  <div class="column is-6">
     <div class="box">
-      small-box
+      medium-box
     </div>
   </div>
 </template>

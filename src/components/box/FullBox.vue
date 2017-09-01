@@ -1,7 +1,7 @@
 <template>
-  <div class="column is-4">
+  <div class="column is-12">
     <div class="box">
-      small-box
+      full-box
     </div>
   </div>
 </template>
