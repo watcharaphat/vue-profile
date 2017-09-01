@@ -7,7 +7,7 @@
       <panel-mobile></panel-mobile>
     </div>
     <div class="column">
-      Content
+      <content-app></content-app>
     </div>
   </div>
 </template>
@@ -15,11 +15,13 @@
 <script>
 import Panel from './Panel';
 import PanelMobile from './PanelMobile';
+import ContentApp from './ContentApp';
 
 export default {
   components: {
     Panel,
     PanelMobile,
+    ContentApp,
   },
   data() {
     return {
