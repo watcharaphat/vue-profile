@@ -2,9 +2,9 @@
   <div class="hero is-primary panel">
     <div class="columns is-gapless profile-header">
       <div class="column is-full">
-        <img :src="image" alt="profile_image" />
+        <img :src="profile.image" alt="profile_image" />
         <div class="profile-name has-text-centered">
-          {{ name }} {{ lastName }}
+          {{ profile.name }} {{ profile.lastName }}
         </div>
       </div>
     </div>
@@ -13,17 +13,10 @@
 
 <script>
 export default {
-  data() {
-    return {
-      name: 'Watcharaphat',
-      lastName: 'Manosatiankul',
-      image: '../../static/img/coffee_circle.png',
-      contact: {
-        phone: '093 559 7337',
-        email: 'watcharaphat.m@ku.th',
-        github: 'github.com/watcharaphat',
-      },
-    };
+  computed: {
+    profile() {
+      return this.$store.state.profile;
+    },
   },
 };
 </script>

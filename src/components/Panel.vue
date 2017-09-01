@@ -2,13 +2,13 @@
   <div class="panel">
       <div class="columns profile-header">
         <div class="column">
-          <img :src="image" alt="profile_img" />
+          <img :src="profile.img" alt="profile_img" />
           <div class="profile-name has-text-centered">
-            <span>{{ name }} {{ lastName }}</span>
+            <span>{{ profile.name }} {{ profile.lastName }}</span>
           </div>
         </div>
       </div>
-      <div v-for="(item, key) in contact" :key="key" class="columns is-mobile">
+      <div v-for="(item, key) in profile.contact" :key="key" class="columns is-mobile">
         <div class="column is-2">
           <span class="icon contact-icon is-medium">
             <i class="fa" :class="{
@@ -26,17 +26,10 @@
 
 <script>
 export default {
-  data() {
-    return {
-      name: 'Watcharaphat',
-      lastName: 'Manosatiankul',
-      image: '../../static/img/coffee_circle.png',
-      contact: {
-        phone: '093 559 7337',
-        email: 'watcharaphat.m@ku.th',
-        github: 'github.com/watcharaphat',
-      },
-    };
+  computed: {
+    profile() {
+      return this.$store.state.profile;
+    },
   },
 };
 </script>
