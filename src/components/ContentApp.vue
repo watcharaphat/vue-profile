@@ -1,5 +1,5 @@
 <template>
-  <div class="columns content-app">
+  <div class="columns is-multiline content-app">
     <div class="column is-6">
       <div class="box">half-box</div>
     </div>
