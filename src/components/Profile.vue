@@ -4,7 +4,7 @@
       <panel></panel>
     </div>
     <div class="column is-12 is-hidden-desktop">
-      Mobile-Header
+      <panel-mobile></panel-mobile>
     </div>
     <div class="column">
       Content
@@ -14,10 +14,12 @@
 
 <script>
 import Panel from './Panel';
+import PanelMobile from './PanelMobile';
 
 export default {
   components: {
     Panel,
+    PanelMobile,
   },
   data() {
     return {
