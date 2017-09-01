@@ -2,7 +2,7 @@
   <div class="hero is-primary panel">
     <div class="columns is-gapless profile-header">
       <div class="column is-full">
-        <img :src="profile.image" alt="profile_image" />
+        <img :src="profile.img" alt="profile_image" />
         <div class="profile-name has-text-centered">
           {{ profile.name }} {{ profile.lastName }}
         </div>
