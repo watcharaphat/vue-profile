@@ -1,9 +1,12 @@
 <template>
-  <div class="columns">
-    <div class="column is-3">
+  <div class="columns is-multiline">
+    <div class="column is-3 is-hidden-touch">
       <panel></panel>
     </div>
-    <div class="column content">
+    <div class="column is-12 is-hidden-desktop">
+      Mobile-Header
+    </div>
+    <div class="column">
       Content
     </div>
   </div>
