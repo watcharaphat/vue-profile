@@ -1,5 +1,5 @@
 <template>
-  <div class="columns is-multiline">
+  <div class="columns is-multiline is-gapless">
     <div class="column is-3 is-hidden-touch">
       <panel></panel>
     </div>

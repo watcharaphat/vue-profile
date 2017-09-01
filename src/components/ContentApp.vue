@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="content">
     Content is here.
   </div>
 </template>
@@ -10,5 +10,9 @@ export default {
 </script>
 
 <style scoped>
+
+.content {
+  background-color: red;
+}
 
 </style>

@@ -71,7 +71,7 @@ export default {
 
 .contact-icon {
   position: relative;
-  top: -0.9em;
+  top: -0.8em;
 }
 
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="hero is-primary panel">
-    <div class="columns profile-header">
+    <div class="columns is-gapless profile-header">
       <div class="column is-full">
         <img :src="image" alt="profile_image" />
         <div class="profile-name has-text-centered">
