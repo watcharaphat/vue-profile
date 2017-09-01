@@ -1,6 +1,11 @@
 <template>
-  <div class="content">
-    Content is here.
+  <div class="columns content-app">
+    <div class="column is-6">
+      <div class="box">half-box</div>
+    </div>
+    <div class="column is-6">
+      <div class="box">half-box</div>
+    </div>
   </div>
 </template>
 
@@ -11,8 +16,10 @@ export default {
 
 <style scoped>
 
-.content {
-  background-color: red;
+.content-app {
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-top: 1.5vh;
 }
 
 </style>
