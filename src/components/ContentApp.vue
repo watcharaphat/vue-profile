@@ -1,19 +1,16 @@
 <template>
   <div class="columns is-multiline content-app">
-    <box :size="8"></box>
-    <box :size="4"></box>
-    <box :size="6"></box>
-    <box :size="6"></box>
-    <box :size="10"></box>
-    <box :size="2"></box>
+    <content-box :size="8"></content-box>
   </div>
 </template>
 
 <script>
+import ContentBox from './box/ContentBox';
 import Box from './box/Box';
 
 export default {
   components: {
+    ContentBox,
     Box,
   },
 };

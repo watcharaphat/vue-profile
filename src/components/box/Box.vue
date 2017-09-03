@@ -14,7 +14,17 @@
     'is-12': size === 12
   }">
     <div class="box">
-      {{ size }}-col-box
+      <div class="header columns is-mobile">
+        <div class="column is-1 has-text-centered">
+          <span class="header-icon">
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </span>
+        </div>
+        <div class="column">
+          About me
+        </div>
+      </div>
+      <slot name="content"></slot>
     </div>
   </div>
 </template>
@@ -31,5 +41,15 @@ export default {
 </script>
 
 <style scoped>
+
+.header {
+  font-weight: 800;
+  font-size: 1.4em;
+}
+
+.header-icon {
+  position: relative;
+  top: 5px;
+}
 
 </style>
