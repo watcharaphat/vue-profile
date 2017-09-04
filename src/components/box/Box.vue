@@ -14,13 +14,11 @@
     'is-12': size === 12
   }">
     <div class="box">
-      <div class="header columns">
-        <div class="column is-12">
-          <span class="header-icon">
-            <i class="fa fa-user" aria-hidden="true"></i>
-          </span>
-          <span>About Me</span>
-        </div>
+      <div class="header">
+        <span class="header-icon">
+          <i class="fa fa-user" aria-hidden="true"></i>
+        </span>
+        <span>About Me</span>
       </div>
       <slot name="content"></slot>
     </div>
