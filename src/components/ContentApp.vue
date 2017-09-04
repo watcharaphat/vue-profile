@@ -1,6 +1,6 @@
 <template>
   <div class="columns is-multiline content-app">
-    <content-box :size="8"></content-box>
+    <content-box :size="4"></content-box>
   </div>
 </template>
 
