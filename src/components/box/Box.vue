@@ -14,14 +14,12 @@
     'is-12': size === 12
   }">
     <div class="box">
-      <div class="header columns is-mobile">
-        <div class="column is-1 has-text-centered">
+      <div class="header columns">
+        <div class="column is-12">
           <span class="header-icon">
             <i class="fa fa-user" aria-hidden="true"></i>
           </span>
-        </div>
-        <div class="column">
-          About me
+          <span>About Me</span>
         </div>
       </div>
       <slot name="content"></slot>
@@ -49,7 +47,8 @@ export default {
 
 .header-icon {
   position: relative;
-  top: 5px;
+  top: 4px;
+  padding-right: 0.3em;
 }
 
 </style>
