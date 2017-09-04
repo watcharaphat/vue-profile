@@ -3,7 +3,7 @@
     <div class="box">
       <div class="header">
         <span class="header-icon">
-          <i class="fa fa-user" aria-hidden="true"></i>
+          <i :class="['fa', iconClass]" aria-hidden="true"></i>
         </span>
         <span>About Me</span>
       </div>
@@ -19,10 +19,17 @@ export default {
       default: 4,
       type: Number,
     },
+    icon: {
+      default: 'circle',
+      type: String,
+    },
   },
   computed: {
     sizeClass() {
       return `is-${this.size}`;
+    },
+    iconClass() {
+      return `fa-${this.icon}`;
     },
   },
 };
