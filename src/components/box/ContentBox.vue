@@ -1,5 +1,5 @@
 <template>
-  <box :size="size">
+  <box :size="size" :icon="'user'">
     <div slot="content">
       <h1>{{ size }}-content-box</h1>
     </div>
