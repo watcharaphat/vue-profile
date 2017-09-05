@@ -8,7 +8,7 @@ export default new Vuex.Store({
     profile: {
       name: 'Watcharaphat',
       lastName: 'Manosatiankul',
-      birthDate: '16 May 1996',
+      birthDate: '16 May 1996 (21 years old)',
       age: 21,
       address: '8/118 Ngamwongwan 54 Chatuchak Bangkok 10900',
       img: 'https://watcharaphat.com/img/coffee_circle.png',
