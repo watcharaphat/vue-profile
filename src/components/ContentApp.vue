@@ -1,17 +1,15 @@
 <template>
   <div class="columns is-multiline content-app">
-    <content-box :size="4"></content-box>
+    <about-me-box :size="4"></about-me-box>
   </div>
 </template>
 
 <script>
-import ContentBox from './box/ContentBox';
-import Box from './box/Box';
+import AboutMeBox from './box/content/AboutMeBox';
 
 export default {
   components: {
-    ContentBox,
-    Box,
+    AboutMeBox,
   },
 };
 </script>

@@ -5,7 +5,7 @@
         <span class="header-icon">
           <i :class="['fa', iconClass]" aria-hidden="true"></i>
         </span>
-        <span>About Me</span>
+        <slot name="header"></slot>
       </div>
       <slot name="content"></slot>
     </div>

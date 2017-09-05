@@ -8,6 +8,7 @@ export default new Vuex.Store({
     profile: {
       name: 'Watcharaphat',
       lastName: 'Manosatiankul',
+      birthDate: '16 May 1996',
       age: 21,
       img: 'https://watcharaphat.com/img/coffee_circle.png',
       contact: {
