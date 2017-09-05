@@ -4,13 +4,9 @@
       {{ header }}
     </span>
     <div slot="content">
-      <div>
-        <span class="content-title">Birth: </span>
-        {{ profile.birthDate }} ({{ profile.age }} yrs.)
-      </div>
-      <div class="sub-content">
-        <span class="content-title">Address: </span>
-        {{ profile.address }}
+      <div v-for="(item, key) in about" :key="key" class="sub-content">
+        <span class="content-title">{{ key }}: </span>
+        {{ item }}
       </div>
     </div>
   </box>
@@ -35,6 +31,12 @@ export default {
     };
   },
   computed: {
+    about() {
+      return {
+        Birth: this.$store.state.profile.birthDate,
+        Address: this.$store.state.profile.address,
+      };
+    },
     profile() {
       return this.$store.state.profile;
     },

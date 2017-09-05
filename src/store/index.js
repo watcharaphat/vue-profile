@@ -10,7 +10,7 @@ export default new Vuex.Store({
       lastName: 'Manosatiankul',
       birthDate: '16 May 1996',
       age: 21,
-      address: '8/118 Ngamwongwan Rd., Soi Ngamwongwan 54 Ladyao Chatuchak Bangkok 10900',
+      address: '8/118 Ngamwongwan 54 Chatuchak Bangkok 10900',
       img: 'https://watcharaphat.com/img/coffee_circle.png',
       contact: {
         phone: '093 559 7337',
