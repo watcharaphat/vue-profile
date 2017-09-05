@@ -4,7 +4,14 @@
       {{ header }}
     </span>
     <div slot="content">
-      <h1>{{ size }}-content-box</h1>
+      <div>
+        <span class="content-title">Birth: </span>
+        {{ profile.birthDate }} ({{ profile.age }} yrs.)
+      </div>
+      <div class="sub-content">
+        <span class="content-title">Address: </span>
+        {{ profile.address }}
+      </div>
     </div>
   </box>
 </template>
@@ -34,3 +41,15 @@ export default {
   },
 };
 </script>
+
+<style>
+
+.content-title {
+  font-weight: 500;
+}
+
+.sub-content {
+  margin-top: 5px;
+}
+
+</style>
