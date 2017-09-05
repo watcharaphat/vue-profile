@@ -1,5 +1,5 @@
 <template>
-  <div :class="['column', sizeClass]">
+  <div :class="['column', { 'is-hidden-desktop': isHiddenDesktop}, sizeClass]">
     <div class="box">
       <div class="header">
         <span class="header-icon">
@@ -22,6 +22,10 @@ export default {
     icon: {
       default: 'circle',
       type: String,
+    },
+    isHiddenDesktop: {
+      default: false,
+      type: Boolean,
     },
   },
   computed: {

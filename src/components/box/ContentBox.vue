@@ -1,5 +1,5 @@
 <template>
-  <box :size="size" :icon="icon">
+  <box :size="size" :icon="icon" :isHiddenDesktop="isHiddenDesktop">
     <span slot="header">
       {{ header }}
     </span>
@@ -23,6 +23,10 @@ export default {
     size: {
       default: 4,
       type: Number,
+    },
+    isHiddenDesktop: {
+      default: false,
+      type: Boolean,
     },
     header: {
       default: 'Header',
