@@ -90,9 +90,9 @@ export default {
     },
     contact() {
       return {
-        row_1: ['Phone', '093 559 7337'],
-        row_2: ['Email', 'watcharaphat.m@ku.th'],
-        row_3: ['Github', 'github.com/watcharaphat'],
+        row_1: ['Phone', this.profile.contact.phone],
+        row_2: ['Email', this.profile.contact.email],
+        row_3: ['Github', this.profile.contact.github],
       };
     },
   },
