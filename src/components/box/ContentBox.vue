@@ -1,5 +1,5 @@
 <template>
-  <box :size="size" :icon="'user'">
+  <box :size="size" :icon="icon">
     <span slot="header">
       {{ header }}
     </span>
@@ -23,6 +23,10 @@ export default {
     },
     header: {
       default: 'Header',
+      type: String,
+    },
+    icon: {
+      default: 'circle',
       type: String,
     },
     data: {
