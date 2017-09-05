@@ -1,7 +1,13 @@
 <template>
   <box :size="size" :icon="'user'">
+    <span slot="header">
+      {{ header }}
+    </span>
     <div slot="content">
-      <h1>{{ size }}-content-box</h1>
+      <div v-for="(item, key) in data" :key="key" class="sub-content">
+        <span class="content-title">{{ key }}: </span>
+        {{ item }}
+      </div>
     </div>
   </box>
 </template>
@@ -15,9 +21,28 @@ export default {
       default: 4,
       type: Number,
     },
+    header: {
+      default: 'Header',
+      type: String,
+    },
+    data: {
+      type: Object,
+    },
   },
   components: {
     Box,
   },
 };
 </script>
+
+<style scoped>
+
+.content-title {
+  font-weight: 500;
+}
+
+.sub-content {
+  margin-top: 5px;
+}
+
+</style>
