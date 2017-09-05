@@ -4,7 +4,7 @@
       <div class="column is-full">
         <img :src="profile.img" alt="profile_image" />
         <div class="profile-name has-text-centered">
-          {{ profile.name }} {{ profile.lastName }}
+          {{ profile.name }} {{ profile.lastName }} ({{ profile.nickName }})
         </div>
       </div>
     </div>
