@@ -1,7 +1,17 @@
 <template>
   <div class="columns is-multiline content-app">
-    <content-box :header="'About Me'" :icon="'user'" :data="about" :size="12"></content-box>
-    <content-box :header="'About Me'" :icon="'user'" :data="about" :size="12"></content-box>
+    <content-box
+      :header="'About Me'"
+      :icon="'user'"
+      :data="about"
+      :size="12">
+    </content-box>
+    <content-box
+      :header="'Education'"
+      :icon="'graduation-cap'"
+      :data="about"
+      :size="12">
+    </content-box>
   </div>
 </template>
 
