@@ -9,7 +9,7 @@
     <content-box
       :header="'Education'"
       :icon="'graduation-cap'"
-      :data="about"
+      :data="education"
       :size="12">
     </content-box>
   </div>
@@ -28,8 +28,14 @@ export default {
     },
     about() {
       return {
-        Birth: this.profile.birthDate,
-        Address: this.profile.address,
+        row_1: ['Birth', this.profile.birthDate],
+        row_2: ['Address', this.profile.address],
+      };
+    },
+    education() {
+      return {
+        row_1: ['Bachelor degree', this.profile.bachelorDegree],
+        row_2: ['GPAX', this.profile.gpa],
       };
     },
   },

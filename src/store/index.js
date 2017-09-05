@@ -17,6 +17,8 @@ export default new Vuex.Store({
         email: 'watcharaphat.m@ku.th',
         github: 'github.com/watcharaphat',
       },
+      bachelorDegree: 'Computer Engineering Kasetsart University (graduate in 2018)',
+      gpa: 3.07,
     },
   },
   mutations: {

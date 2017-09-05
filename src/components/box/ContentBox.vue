@@ -4,9 +4,9 @@
       {{ header }}
     </span>
     <div slot="content">
-      <div v-for="(item, key) in data" :key="key" class="sub-content">
-        <span class="content-title">{{ key }}: </span>
-        {{ item }}
+      <div v-for="item in data" :key="item" class="sub-content">
+        <span class="content-title">{{ item[0] }}: </span>
+        {{ item[1] }}
       </div>
     </div>
   </box>
