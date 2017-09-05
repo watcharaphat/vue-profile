@@ -49,4 +49,8 @@ export default {
   padding-right: 0.3em;
 }
 
+.box {
+  height: 100%;
+}
+
 </style>

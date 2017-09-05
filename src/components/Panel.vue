@@ -37,7 +37,8 @@ export default {
 <style scoped>
 
 .panel {
-  min-height: 100vh;
+  min-height: 110%;
+  height: 100vh;
   background-color: #00D1B2;
   color: #FFFFFF;
   padding: 1.25rem;

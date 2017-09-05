@@ -4,8 +4,11 @@
       {{ header }}
     </span>
     <div slot="content">
-      <div v-for="item in data" :key="item" class="sub-content">
-        <span class="content-title">{{ item[0] }}: </span>
+      <div v-for="(item, key) in data" :key="key" class="sub-content">
+        <span class="content-title">
+          <span v-if="noColon">-&nbsp;&nbsp;</span>
+          {{ item[0] }}<span v-if="!noColon">:</span>
+        </span>
         {{ item[1] }}
       </div>
     </div>
@@ -31,6 +34,10 @@ export default {
     },
     data: {
       type: Object,
+    },
+    noColon: {
+      default: false,
+      type: Boolean,
     },
   },
   components: {
