@@ -32,6 +32,13 @@
       :noColon="true"
       :size="11" >
     </content-box>
+    <content-box
+      :isHiddenDesktop="true"
+      :header="'Contact Me'" 
+      :icon="'phone'"
+      :data="contact"
+      :size="11" >
+    </content-box>
   </div>
 </template>
 
@@ -62,6 +69,7 @@ export default {
       return {
         row_1: ['Java', 'High'],
         row_2: ['JavaScript', 'High'],
+        row_3: ['I\'m working on', 'SkillBox component'],
       };
     },
     activities() {
@@ -78,6 +86,13 @@ export default {
         row_1: ['Web Developer (both frontend and backend)'],
         row_2: ['Data Scientist'],
         row_3: ['Android Application Developer'],
+      };
+    },
+    contact() {
+      return {
+        row_1: ['Phone', '093 559 7337'],
+        row_2: ['Email', 'watcharaphat.m@ku.th'],
+        row_3: ['Github', 'github.com/watcharaphat'],
       };
     },
   },
