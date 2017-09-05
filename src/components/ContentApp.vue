@@ -84,8 +84,9 @@ export default {
     interests() {
       return {
         row_1: ['Web Developer (both frontend and backend)'],
-        row_2: ['Data Scientist'],
-        row_3: ['Android Application Developer'],
+        row_2: ['Algorithm'],
+        row_3: ['Data Scientist'],
+        row_4: ['Android Application Developer'],
       };
     },
     contact() {
