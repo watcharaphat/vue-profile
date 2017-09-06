@@ -82,7 +82,7 @@ export default {
     programmingLanguage() {
       return {
         row_1: ['Advance', 'JavaScript, Java, HTML, CSS, C, C++'],
-        row_2: ['Intermediate', 'Python, Kotlin, PHP'],
+        row_2: ['Intermediate', 'Python, Kotlin, R, PHP'],
       };
     },
     tool() {
