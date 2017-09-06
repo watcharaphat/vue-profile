@@ -13,10 +13,24 @@
       :size="7" >
     </content-box>
     <content-box
-      :header="'Skills'"
+      :header="'Experienced Programming Languages'"
       :icon="'pencil'"
-      :data="skills"
+      :data="programmingLanguage"
       :size="11" >
+    </content-box>
+    <content-box
+      :header="'Experienced Web Stacks &amp; Tools'"
+      :icon="'gavel'"
+      :data="tool"
+      :noColon="true"
+      :size="6" >
+    </content-box>
+    <content-box
+      :header="'Others'"
+      :icon="'rocket'"
+      :data="other"
+      :noColon="true"
+      :size="5" >
     </content-box>
     <content-box
       :header="'Previous Activities'"
@@ -65,28 +79,40 @@ export default {
         row_2: ['GPAX', this.profile.gpa],
       };
     },
-    skills() {
+    programmingLanguage() {
       return {
-        row_1: ['Java', 'High'],
-        row_2: ['JavaScript', 'High'],
-        row_3: ['I\'m working on', 'SkillBox component'],
+        row_1: ['Advance', 'JavaScript, Java, HTML, CSS, C, C++'],
+        row_2: ['Intermediate', 'Python, Kotlin, PHP'],
+      };
+    },
+    tool() {
+      return {
+        row_1: ['Vue.js, React'],
+        row_2: ['nginx, Apache2, Docker, DigitalOcean, MongoDB'],
+      };
+    },
+    other() {
+      return {
+        row_1: ['Statistics, Math, Algorithm'],
+        row_2: ['Unix CLI, git, Design, Sketch App'],
       };
     },
     activities() {
       return {
         row_1: ['2016 ACM-ICPC Asia Bangkok Regional Contest'],
         row_2: ['2011 Thailand Mathematics Olympiad'],
-        row_3: ['E-commerce website Shoebox using React.js and Django'],
-        row_4: ['Internship at INOX (Innovative Extremist) as a frontend developer'],
+        row_3: ['E-commerce website Shoebox using React and Django'],
+        row_4: ['Internship at INOX (Innovative Extremist) as a Front-End Web Developer'],
         row_5: ['This profile using Vue.js'],
       };
     },
     interests() {
       return {
-        row_1: ['Web Developer (both frontend and backend)'],
-        row_2: ['Algorithm'],
-        row_3: ['Data Scientist'],
-        row_4: ['Android Application Developer'],
+        row_1: ['Full-Stack Web Developer'],
+        row_2: ['A.I.'],
+        row_3: ['Algorithm'],
+        row_4: ['Data Scientist'],
+        row_5: ['Android Application Developer'],
       };
     },
     contact() {
