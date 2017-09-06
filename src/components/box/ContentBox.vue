@@ -5,7 +5,7 @@
     </span>
     <div slot="content">
       <div v-for="(item, key) in data" :key="key" class="sub-content">
-        <span class="content-title">
+        <span :class="{ 'content-title': !noColon}">
           <span v-if="noColon">-&nbsp;&nbsp;</span>
           {{ item[0] }}<span v-if="!noColon">:</span>
         </span>
