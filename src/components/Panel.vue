@@ -60,7 +60,7 @@ export default {
 
 .contact-info {
   font-size: 1.1em;
-  font-weight: 500;
+  font-weight: 600;
   padding-top: 0px;
   padding-bottom: 0px;
 }
