@@ -46,7 +46,9 @@ export default {
 
 .profile-header {
   width: 70%;
-  margin: 5vh auto 0 auto;
+  margin-left: 15%;
+  margin-top: 5%;
+  /* margin: 5vh auto 0 auto; */
 }
 
 .profile-name {
